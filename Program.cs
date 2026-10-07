@@ -49,16 +49,37 @@ namespace MeuProjeto
             //     double afterValue =  productValue + (productValue * markup); # Calcula o valor do produto apos a multiplicação com a porcentagem de 15%
             //  Console.WriteLine("The value of product after the markup is: {0} ", afterValue); # Mostra o valor do produto apos a multiplicação com a porcentagem de 15%
 
-            // EXERCICIO 005
-            Console.Write("Buying Price: "); // Pede ao usuario um valor de compra de um produto
-            double buyingPrice = Convert.ToDouble(Console.ReadLine()); // Converte o valor de uma string do valor do produto para um double (um valor inteiro com casas decimais)
-            Console.Write("Profit Percentage: "); // Pede ao usuario um valor de porcentagem de lucro que ele deseja ter sobre o produto
-            double profitPercentage = Convert.ToDouble(Console.ReadLine()); // Converte o valor de uma string de porcentagem para um double (um valor inteiro com casas decimais)
-            double profit = buyingPrice * (profitPercentage / 100); // Calcula o lucro do produto multiplicando o valor de compra do produto pela porcentagem de lucro dividida por 100 (para transformar a porcentagem em decimal)
-            double sellingPrice = buyingPrice + profit; // Calcula o valor de venda do produto somando o valor de compra do produto com o lucro calculado anteriormente
-            Console.WriteLine($"Selling Price {sellingPrice}"); // Mostra o valor de venda do produto apos a soma do valor de compra com o lucro calculado anteriormente
-            Console.WriteLine($"Profit {profit}"); // Mostra o valor de porcentagem calculado anteriormente
+            // // EXERCICIO 005
+            // Console.Write("Buying Price: "); // Pede ao usuario um valor de compra de um produto
+            // double buyingPrice = Convert.ToDouble(Console.ReadLine()); // Converte o valor de uma string do valor do produto para um double (um valor inteiro com casas decimais)
+            // Console.Write("Profit Percentage: "); // Pede ao usuario um valor de porcentagem de lucro que ele deseja ter sobre o produto
+            // double profitPercentage = Convert.ToDouble(Console.ReadLine()); // Converte o valor de uma string de porcentagem para um double (um valor inteiro com casas decimais)
+            // double profit = buyingPrice * (profitPercentage / 100); // Calcula o lucro do produto multiplicando o valor de compra do produto pela porcentagem de lucro dividida por 100 (para transformar a porcentagem em decimal)
+            // double sellingPrice = buyingPrice + profit; // Calcula o valor de venda do produto somando o valor de compra do produto com o lucro calculado anteriormente
+            // Console.WriteLine($"Selling Price {sellingPrice}"); // Mostra o valor de venda do produto apos a soma do valor de compra com o lucro calculado anteriormente
+            // Console.WriteLine($"Profit {profit}"); // Mostra o valor de porcentagem calculado anteriormente
 
+
+            /* EXERCICIO 006 */
+            Console.Write ("Name: ");
+            string name = Console.ReadLine();
+            Console.Write ("Salary: ");
+            double salary = Convert.ToDouble(Console.ReadLine());
+            Console.Write ("Years of experience: ");
+            int yearsOfExperience = Convert.ToInt32(Console.ReadLine());
+            Console.Write ("Kids: ");
+            int kids = Convert.ToInt32(Console.ReadLine());
+
+            double yearsIncrease = yearsOfExperience * 0.5;
+            double kidsIncrease = kids * 2;
+            double salaryIncreasePercentage = yearsIncrease + kidsIncrease;
+            double salaryIncrease = salary* (salaryIncreasePercentage / 100);
+            double newSalary = salary + salaryIncrease;     
+
+            Console.WriteLine($"New Salary: {newSalary}");
+ 
+            
+    
             
 
 
