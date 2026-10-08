@@ -6,6 +6,8 @@ namespace MeuProjeto
     {
         static void Main(string[] args)
         {
+
+            /* EXERCICIO 001 */
             // Console.Write("Type your name: ");
             // string name = Console.ReadLine();
             // Console.Write("Type your age: ");
@@ -21,7 +23,7 @@ namespace MeuProjeto
 
 
 
-            //  EXERCICIO 001     
+            //  EXERCICIO 002     
             // Console.WriteLine("Type a number: ");
             // int a = 3;
             // int b = 5;
@@ -60,23 +62,114 @@ namespace MeuProjeto
             // Console.WriteLine($"Profit {profit}"); // Mostra o valor de porcentagem calculado anteriormente
 
 
-            /* EXERCICIO 006 */
-            Console.Write ("Name: ");
-            string name = Console.ReadLine();
-            Console.Write ("Salary: ");
-            double salary = Convert.ToDouble(Console.ReadLine());
-            Console.Write ("Years of experience: ");
-            int yearsOfExperience = Convert.ToInt32(Console.ReadLine());
-            Console.Write ("Kids: ");
-            int kids = Convert.ToInt32(Console.ReadLine());
+            // /* EXERCICIO 006 */
+            // Console.Write ("Name: ");
+            // string name = Console.ReadLine();
+            // Console.Write ("Salary: ");
+            // double salary = Convert.ToDouble(Console.ReadLine());
+            // Console.Write ("Years of experience: ");
+            // int yearsOfExperience = Convert.ToInt32(Console.ReadLine());
+            // Console.Write ("Kids: ");
+            // int kids = Convert.ToInt32(Console.ReadLine());
 
-            double yearsIncrease = yearsOfExperience * 0.5;
-            double kidsIncrease = kids * 2;
-            double salaryIncreasePercentage = yearsIncrease + kidsIncrease;
-            double salaryIncrease = salary* (salaryIncreasePercentage / 100);
-            double newSalary = salary + salaryIncrease;     
+            // double yearsIncrease = yearsOfExperience * 0.5;
+            // double kidsIncrease = kids * 2;
+            // double salaryIncreasePercentage = yearsIncrease + kidsIncrease;
+            // double salaryIncrease = salary* (salaryIncreasePercentage / 100);
+            // double newSalary = salary + salaryIncrease;     
 
-            Console.WriteLine($"New Salary: {newSalary}");
+            // Console.WriteLine($"New Salary: {newSalary}");
+ 
+        // /* Exercício 007 */
+        // Console.Write("Type a number 1: ");
+        // int number1 = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Type a number 2: ");
+        // int number2 = Convert.ToInt32(Console.ReadLine());
+
+        // Console.WriteLine($"Number 1: {number1} Number 2: {number2}");
+        // int auxiliary = number1;
+        // number1 = number2;
+        // number2 = auxiliary;
+        // Console.WriteLine($"Number 1: {number1} Number 2: {number2}");
+
+        /* Exercicio 008 */
+        // Console.Write("Type a seconds: ");
+        // int secondsInTime = Convert.ToInt32(Console.ReadLine()); 
+        // int hours = secondsInTime / 3600; /* Divide o valor de segundos por 3600 para obter o valor em horas */
+        // int secondsTime = secondsInTime % 3600; /* Calcula a divisão do valor de segundos por 3600 para obter o valor em segundos restantes após a divisão por 3600 */
+        // int minutes = secondsTime / 60; /* Divide o valor de segundos restantes por 60 para obter o valor em minutos */
+        // int seconds = secondsTime % 60; /* Calcula a divisão do valor de segundos restantes por 60 para obter o valor em segundos restantes após a divisão por 60 */
+        // Console.WriteLine($"Hours: {hours} Minutes: {minutes} Seconds: {seconds}");
+
+        // /*Exercicio 009 */
+        // Console.Write("Number with 6 digits: ");
+        // int fullNumber = Convert.ToInt32(Console.ReadLine());
+        // int leftNumber = fullNumber / 1000; /* Divide o valor do número completo por 1000 para obter os 3 primeiros dígitos do número */
+        // int rightNumber = fullNumber % 1000; /* Calcula a divisão do valor do número completo por 1000 para obter os 3 últimos dígitos do número */
+        // Console.WriteLine($"Left Number: {leftNumber}, Right Number: {rightNumber}");
+
+        // /* EXERCICIO 010 */
+        // Console.Write("Number: ");
+        // int number = Convert.ToInt32(Console.ReadLine());
+        // int lastDigit = number % 10; /* Calcula a divisão do valor do número completo por 10 para obter o último dígito do número */
+        // int lastDigit1 = (number % 100) / 10; /* Calcula a divisão do valor do número completo por 100 para obter o penúltimo dígito do número */
+        // int lastDigit2 = (number % 1000) / 100; /* Calcula a divisão do valor do número completo por 100 para obter o penúltimo dígito do número */
+        // int lastDigit3 = (number % 10000) / 1000; /* Calcula a divisão do valor do número completo por 1000 para obter o antepenúltimo dígito do número */
+        // Console.WriteLine($"{lastDigit}, {lastDigit1}, {lastDigit2}, {lastDigit3}"); /* Mostra o último dígito do número, o penúltimo dígito do número, o antepenúltimo dígito do número e o quarto dígito do número */
+
+
+    
+
+            
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+             }
+    }
+
+ 
  
             
     
