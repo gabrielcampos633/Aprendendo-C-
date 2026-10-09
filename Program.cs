@@ -117,62 +117,39 @@ namespace MeuProjeto
         // int lastDigit3 = (number % 10000) / 1000; /* Calcula a divisão do valor do número completo por 1000 para obter o antepenúltimo dígito do número */
         // Console.WriteLine($"{lastDigit}, {lastDigit1}, {lastDigit2}, {lastDigit3}"); /* Mostra o último dígito do número, o penúltimo dígito do número, o antepenúltimo dígito do número e o quarto dígito do número */
 
+        // /* LOGICAL EXPRESSIONS 001 */
+        // bool isMarried = true;
+        // int salary = 12000;
+        // bool hasJob = true;
+        // bool isManager = false;
 
-    
+        // Console.WriteLine($"Is married and is manager: {isMarried && isManager}"); /* Mostra se a pessoa é casada e é gerente (Mostra que é falso pq o and lógico só é verdadeiro se as duas condições forem verdadeiras) */
+        // Console.WriteLine($"Salary is above 12000 and is manager: {salary >= 12000 && isMarried}");
 
-            
-    
-            
+        // //  LOGICAL EXPRESSIONS 002
+        // int number1 = 3;
+        // int number2 = 4;
+        // int number3 = 5;
+        // Console.WriteLine($"Math.Max({number1}, {number2}): {Math.Max(number1, number2)}"); /* O comando Math.Max retorna o maior valor entre dois 
+        // Console.WriteLine($"Math.Min({number1}, {number2}): {Math.Min(number1, number2)}");  O comando Math.Min retorna o menor valor entre dois  (tambem pode usar valores inteiros, sem strings) 
 
+        // Console.WriteLine($"Math.Max(): {Math.Max(Math.Max(number1, number2), number3)}"); /* O comando Math.Max retorna o maior valor entre tres */
+        // Console.WriteLine($"Math.Min(): {Math.Min(Math.Min(number1, number2), number3)}"); /* O comando Math.Min retorna o menor valor entre tres */
 
+        // Console.WriteLine($"2^4 = {Math.Pow(2, 4)}");
+        // Console.WriteLine($"{number1} ^ {number2} = {Math.Pow(number1, number2)}"); 
 
+// /* RAIZES QUADRADAS*/
+//         Console.WriteLine($"Square Root from 81: {Math.Sqrt(81)}");
+//         Console.WriteLine($"Square Root from 121: {Math.Sqrt(121)}");
+//         Console.WriteLine($"Square Root from 541: {Math.Sqrt(541)}");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-             }
-    }
-
- 
- 
-            
-    
+/* MENOS USADOS (VER DOCUMENTAÇÃO QUANDO NECESSARIO) */
+        double value = 3.4745646;
+        Console.WriteLine($"Celling: {Math.Ceiling(value)}"); /* Pega o numero apos o ponto */
+        Console.WriteLine($"Floor: {Math.Floor(value)}"); /* Volta e pega o numero anterior */ 
+        Console.WriteLine($"Round: {Math.Round(value, 2)}"); /* Arredonda os numeros */
+        Console.WriteLine($"Truncate: {Math.Truncate(value)}"); /* Pega apenas os numeros da esquerda */
             
 
 
