@@ -1,4 +1,6 @@
-using System; 
+using System;
+using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace MeuProjeto
 {
@@ -144,13 +146,43 @@ namespace MeuProjeto
 //         Console.WriteLine($"Square Root from 121: {Math.Sqrt(121)}");
 //         Console.WriteLine($"Square Root from 541: {Math.Sqrt(541)}");
 
-/* MENOS USADOS (VER DOCUMENTAÇÃO QUANDO NECESSARIO) */
-        double value = 3.4745646;
-        Console.WriteLine($"Celling: {Math.Ceiling(value)}"); /* Pega o numero apos o ponto */
-        Console.WriteLine($"Floor: {Math.Floor(value)}"); /* Volta e pega o numero anterior */ 
-        Console.WriteLine($"Round: {Math.Round(value, 2)}"); /* Arredonda os numeros */
-        Console.WriteLine($"Truncate: {Math.Truncate(value)}"); /* Pega apenas os numeros da esquerda */
+// /* MENOS USADOS (VER DOCUMENTAÇÃO QUANDO NECESSARIO) */
+//         double value = 3.4745646;
+//         Console.WriteLine($"Celling: {Math.Ceiling(value)}"); /* Pega o numero apos o ponto */
+//         Console.WriteLine($"Floor: {Math.Floor(value)}"); /* Volta e pega o numero anterior */ 
+//         Console.WriteLine($"Round: {Math.Round(value, 2)}"); /* Arredonda os numeros */
+//         Console.WriteLine($"Truncate: {Math.Truncate(value)}"); /* Pega apenas os numeros da esquerda */
             
+// /* IF, ELSE E SWITCH*/
+//         Console.Write("Type a number 1: ");
+//         int number1 = Convert.ToInt32(Console.ReadLine());
+//         Console.Write("Type a number 2: "); 
+//         int number2 = Convert.ToInt32(Console.ReadLine());
+
+//        if (number1 > number2) {Console.WriteLine("O numero 1 é maior que o numero 2");}
+//        else if (number2 > number1) {Console.WriteLine("O numero 2 é maior que o numero 1");}
+
+
+       /* QUESTÃO 002 - IF, ELSE && SWITCH */
+        Console.Write("Type a number 1: ");
+        int number1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Type a number 2: "); 
+        int number2 = Convert.ToInt32(Console.ReadLine());
+
+        if (number1 == number2) {
+            Console.WriteLine("Numbers are equal");
+            }
+
+        else if (number1 > number2)
+            {
+                Console.WriteLine("The number 1 is highest than 2 ");
+            }
+
+        else {
+            Console.WriteLine("The number 2 is highest than number 1 ");
+        }
+
+
 
 
 
