@@ -163,25 +163,46 @@ namespace MeuProjeto
 //        else if (number2 > number1) {Console.WriteLine("O numero 2 é maior que o numero 1");}
 
 
-       /* QUESTÃO 002 - IF, ELSE && SWITCH */
-        Console.Write("Type a number 1: ");
-        int number1 = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Type a number 2: "); 
-        int number2 = Convert.ToInt32(Console.ReadLine());
+    //    /* QUESTÃO 002 - IF, ELSE && SWITCH */
+    //     Console.Write("Type a number 1: ");
+    //     int number1 = Convert.ToInt32(Console.ReadLine());
+    //     Console.Write("Type a number 2: "); 
+    //     int number2 = Convert.ToInt32(Console.ReadLine());
 
-        if (number1 == number2) {
-            Console.WriteLine("Numbers are equal");
-            }
+    //     if (number1 == number2) {
+    //         Console.WriteLine("Numbers are equal");
+    //         }
 
-        else if (number1 > number2)
+    //     else if (number1 > number2)
+    //         {
+    //             Console.WriteLine("The number 1 is highest than 2 ");
+    //         }
+
+    //     else {
+    //         Console.WriteLine("The number 2 is highest than number 1 ");
+    //     }
+
+    /* QUESTAO 003 - IF, ELSE, IF ELSE*/
+
+    Console.Write("Type a number 1: "); 
+    int number1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Type a number 2: "); 
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Type a number 3: "); 
+    int number3 = Convert.ToInt32(Console.ReadLine());
+
+    if (number1 > number2 && number1 > number3) {Console.WriteLine("The number one is highest than other numbers")
+    ;}
+
+    else if (number2 > number1 && number2 > number3)
             {
-                Console.WriteLine("The number 1 is highest than 2 ");
+                Console.WriteLine("The number two is highest than others numbers");
             }
 
-        else {
-            Console.WriteLine("The number 2 is highest than number 1 ");
-        }
-
+    else
+            {
+                Console.WriteLine("The third number is highest than others");
+            }
 
 
 
