@@ -1,6 +1,8 @@
 using System;
 using System.Globalization;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace MeuProjeto
 {
@@ -184,25 +186,75 @@ namespace MeuProjeto
 
     /* QUESTAO 003 - IF, ELSE, IF ELSE*/
 
-    Console.Write("Type a number 1: "); 
-    int number1 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Type a number 2: "); 
-    int number2 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Type a number 3: "); 
-    int number3 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Type a number 1: "); 
+    // int number1 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Type a number 2: "); 
+    // int number2 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Type a number 3: "); 
+    // int number3 = Convert.ToInt32(Console.ReadLine());
 
-    if (number1 > number2 && number1 > number3) {Console.WriteLine("The number one is highest than other numbers")
-    ;}
+    // if (number1 > number2 && number1 > number3) {Console.WriteLine("The number one is highest than other numbers")
+    // ;}
 
-    else if (number2 > number1 && number2 > number3)
-            {
-                Console.WriteLine("The number two is highest than others numbers");
-            }
+    // else if (number2 > number1 && number2 > number3)
+    //         {
+    //             Console.WriteLine("The number two is highest than others numbers");
+    //         }
 
-    else
-            {
-                Console.WriteLine("The third number is highest than others");
-            }
+    // else
+    //         {
+    //             Console.WriteLine("The third number is highest than others");
+    //         }
+
+     /* QUESTAO 004 */
+ 
+    // Console.Write("Number: ");
+    // int number = Convert.ToInt32(Console.ReadLine());
+    // if (number > 0) {Console.WriteLine($"{number} is bigger than 0");}
+    // else  if (number <0) {Console.WriteLine($"{number} é menor que 0");}
+    // else if (number == 0) {Console.WriteLine($"The number is 0");}
+
+    // // // QUESTAO 005 */
+
+    // Console.Write("Age: ");
+    // int age = Convert.ToInt32(Console.ReadLine());
+    // if (age <18) {Console.WriteLine("Minor");}
+    // else
+    // {
+    //     Console.WriteLine("A idade é maior que 18");
+    // }
+
+    // if (age >=18) {Console.WriteLine("É de maior");}
+    // else {Console.WriteLine("É de menor");}
+    
+    /* QUESTAO 006 */
+
+     Console.Write("Number: ");    
+     int number = Convert.ToInt32(Console.ReadLine());
+
+     if (number % 2 == 0) {Console.WriteLine("O numero é par");}
+     else {Console.WriteLine("O numero eh impar");}   
+
+
+
+
+
+// ARRAYS
+
+    // int[] numbers = new int[3];
+
+    // Console.Write("Number 1: "); 
+    // numbers[0] = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Number 2: "); 
+    // numbers[1] = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Number 3: "); 
+    // numbers[2] = Convert.ToInt32(Console.ReadLine());
+
+    // Array.Sort(numbers);
+
+    // Console.WriteLine($"{numbers[0]}, {numbers[1]}, {numbers[2]}");
+
+
 
 
 
