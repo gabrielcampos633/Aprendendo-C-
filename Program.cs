@@ -227,13 +227,33 @@ namespace MeuProjeto
     // if (age >=18) {Console.WriteLine("É de maior");}
     // else {Console.WriteLine("É de menor");}
     
-    /* QUESTAO 006 */
+    // /* QUESTAO 006 */
 
-     Console.Write("Number: ");    
-     int number = Convert.ToInt32(Console.ReadLine());
+    //  Console.Write("Number: ");    
+    //  int number = Convert.ToInt32(Console.ReadLine());
 
-     if (number % 2 == 0) {Console.WriteLine("O numero é par");}
-     else {Console.WriteLine("O numero eh impar");}   
+    //  if (number % 2 == 0) {Console.WriteLine("O numero é par");}
+    //  else {Console.WriteLine("O numero eh impar");}   
+
+    /* QUESTAO 007 */
+
+    Console.Write("Number 1: "); 
+    int number1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Number 2: "); 
+    int number2 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Operation: ");
+    string operation = Console.ReadLine();
+
+    double result = 0;
+
+    if (operation == "+") {result = number1 + number2;}
+    else if (operation == "-") {result = number1 - number2;}
+    else if (operation == "*") {result = number1 * number2;}
+    else if (operation == "/") {result = number1 / (double) number2;} 
+    // POSSIVEIS OPERACOES INVALIDAS + DIVISAO POR ZERO
+    
+    Console.WriteLine($"{number1} {operation} {number2} = {result}");
+
 
 
 
