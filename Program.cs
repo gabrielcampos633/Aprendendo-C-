@@ -2,6 +2,7 @@ using System;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace MeuProjeto
@@ -235,24 +236,53 @@ namespace MeuProjeto
     //  if (number % 2 == 0) {Console.WriteLine("O numero é par");}
     //  else {Console.WriteLine("O numero eh impar");}   
 
-    /* QUESTAO 007 */
+    // /* QUESTAO 007 */
 
-    Console.Write("Number 1: "); 
-    int number1 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Number 2: "); 
-    int number2 = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Operation: ");
-    string operation = Console.ReadLine();
+    // Console.Write("Number 1: "); 
+    // int number1 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Number 2: "); 
+    // int number2 = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Operation: ");
+    // string operation = Console.ReadLine();
 
-    double result = 0;
+    // double result = 0;
 
-    if (operation == "+") {result = number1 + number2;}
-    else if (operation == "-") {result = number1 - number2;}
-    else if (operation == "*") {result = number1 * number2;}
-    else if (operation == "/") {result = number1 / (double) number2;} 
-    // POSSIVEIS OPERACOES INVALIDAS + DIVISAO POR ZERO
+    // if (operation == "+") {result = number1 + number2;}
+    // else if (operation == "-") {result = number1 - number2;}
+    // else if (operation == "*") {result = number1 * number2;}
+    // else if (operation == "/") {result = number1 / (double) number2;} 
+    // // POSSIVEIS OPERACOES INVALIDAS + DIVISAO POR ZERO
     
-    Console.WriteLine($"{number1} {operation} {number2} = {result}");
+    // Console.WriteLine($"{number1} {operation} {number2} = {result}");
+
+    /* QUESTAO 008 */
+
+    Console.Write("Hour: ");
+    int hour = Convert.ToInt32(Console.ReadLine());
+    if (hour <0 || hour >23)
+            {
+                Console.WriteLine("Invalid Hour");
+            }
+            else {
+            string salutation;
+    if (hour <12)
+            {
+                salutation = "Morning";
+            }
+            else if (hour <16)
+            {
+                salutation = "Afternoon";
+            }
+            else if (hour <18)
+            {
+                salutation = "Evening";
+            }
+            else
+            {
+                salutation = "Night";
+            } 
+            Console.WriteLine($"Good {salutation}");
+    }
 
 
 
