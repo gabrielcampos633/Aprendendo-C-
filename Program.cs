@@ -257,32 +257,80 @@ namespace MeuProjeto
 
     /* QUESTAO 008 */
 
-    Console.Write("Hour: ");
-    int hour = Convert.ToInt32(Console.ReadLine());
-    if (hour <0 || hour >23)
+    // Console.Write("Hour: ");
+    // int hour = Convert.ToInt32(Console.ReadLine());
+    // if (hour <0 || hour >23)
+    //         {
+    //             Console.WriteLine("Invalid Hour");
+    //         }
+    //         else {
+    //         string salutation;
+    // if (hour <12)
+    //         {
+    //             salutation = "Morning";
+    //         }
+    //         else if (hour <16)
+    //         {
+    //             salutation = "Afternoon";
+    //         }
+    //         else if (hour <18)
+    //         {
+    //             salutation = "Evening";
+    //         }
+    //         else
+    //         {
+    //             salutation = "Night";
+    //         } 
+    //         Console.WriteLine($"Good {salutation}");
+    // }
+
+    /* QUESTAO 009 */
+
+    // Console.Write("Letter: "); 
+    // string letter = Console.ReadLine();
+
+    // string letterLower = letter.ToLower();
+    // if (letterLower == "a" || letterLower == "e" || letterLower == "i" || letterLower == "o" || letterLower == "u")
+    //         {
+    //             Console.WriteLine($"The vowel is {letter}");
+    //         }
+    //         else
+    //         {
+    //             Console.WriteLine($"Consonant: {letter}");
+    //         }
+     
+     /* QUESTAO 010 */
+    Console.Write("Age: "); 
+    double age = Convert.ToDouble(Console.ReadLine());
+
+    if (age == 0)
             {
-                Console.WriteLine("Invalid Hour");
+                Console.WriteLine("Unborn");
             }
-            else {
-            string salutation;
-    if (hour <12)
+                else if (age <=1)
             {
-                salutation = "Morning";
+                Console.WriteLine("Infant");
             }
-            else if (hour <16)
+                    else if (age <=12)
             {
-                salutation = "Afternoon";
+                Console.WriteLine("Child");
             }
-            else if (hour <18)
+                        else if ( age <=17)
             {
-                salutation = "Evening";
+                Console.WriteLine("Adolescent");
             }
-            else
+                            else if (age <=55)
             {
-                salutation = "Night";
-            } 
-            Console.WriteLine($"Good {salutation}");
-    }
+                Console.WriteLine("Adult"); 
+            }
+                                else if (age <=75)
+            {
+                Console.WriteLine("Senior"); 
+            }
+                                    else
+            {
+                Console.WriteLine("Elderly");
+            }
 
 
 
