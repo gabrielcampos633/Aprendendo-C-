@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
@@ -299,38 +300,93 @@ namespace MeuProjeto
     //             Console.WriteLine($"Consonant: {letter}");
     //         }
      
-     /* QUESTAO 010 */
-    Console.Write("Age: "); 
-    double age = Convert.ToDouble(Console.ReadLine());
+    //  /* QUESTAO 010 */
+    // Console.Write("Age: "); 
+    // double age = Convert.ToDouble(Console.ReadLine());
 
-    if (age == 0)
+    // if (age == 0)
+    //         {
+    //             Console.WriteLine("Unborn");
+    //         }
+    //             else if (age <=1)
+    //         {
+    //             Console.WriteLine("Infant");
+    //         }
+    //                 else if (age <=12)
+    //         {
+    //             Console.WriteLine("Child");
+    //         }
+    //                     else if ( age <=17)
+    //         {
+    //             Console.WriteLine("Adolescent");
+    //         }
+    //                         else if (age <=55)
+    //         {
+    //             Console.WriteLine("Adult"); 
+    //         }
+    //                             else if (age <=75)
+    //         {
+    //             Console.WriteLine("Senior"); 
+    //         }
+    //                                 else
+    //         {
+    //             Console.WriteLine("Elderly");
+    //         }
+            
+
+
+// /* QUESTAO 011 */ 
+// Divisão por numeros de anos e anos bissextos, achei não tão util pois tem um comando no c# para isso
+
+// Console.Write("Name: ");
+// string name = Console.ReadLine(); 
+// Console.Write("Height: " );
+// double height = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Gender: ");
+// string gender = Console.ReadLine();
+
+// gender = gender.ToUpper();
+
+// double pesoideal = 0;
+// if (gender != "Male" && gender != "Female") {Console.WriteLine("I dont have a formula for this gender");}
+//     else
+//             {
+//                 if (gender == "Male") 
+//                 {pesoideal = (72.7 * height) - 58;}
+//             }
+//                 if (gender == "Female") 
+//             {
+//                 pesoideal = (62.1 * height) - 44.7;
+//             }
+//             Console.WriteLine($"The height is {pesoideal} in kilograms");
+
+
+
+
+//   QUESTAO 012 
+Console.Write("Size A: "); 
+double a = Convert.ToDouble(Console.ReadLine()); 
+Console.Write("Size B: ");
+double b = Convert.ToDouble(Console.ReadLine());
+Console.Write("Size C: ");
+double c = Convert.ToDouble(Console.ReadLine());
+
+if (a == b && a == c && b == c)
             {
-                Console.WriteLine("Unborn");
+                Console.WriteLine("Equilateral");
             }
-                else if (age <=1)
+            else if (
+                a != b && a != c && b != c
+            )
             {
-                Console.WriteLine("Infant");
+                Console.WriteLine("Scalene");
             }
-                    else if (age <=12)
+            else
             {
-                Console.WriteLine("Child");
+                Console.WriteLine("Isosceles"); 
             }
-                        else if ( age <=17)
-            {
-                Console.WriteLine("Adolescent");
-            }
-                            else if (age <=55)
-            {
-                Console.WriteLine("Adult"); 
-            }
-                                else if (age <=75)
-            {
-                Console.WriteLine("Senior"); 
-            }
-                                    else
-            {
-                Console.WriteLine("Elderly");
-            }
+
+
 
 
 
