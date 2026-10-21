@@ -363,34 +363,67 @@ namespace MeuProjeto
 
 
 
-//   QUESTAO 012 
-Console.Write("Size A: "); 
-double a = Convert.ToDouble(Console.ReadLine()); 
-Console.Write("Size B: ");
-double b = Convert.ToDouble(Console.ReadLine());
-Console.Write("Size C: ");
-double c = Convert.ToDouble(Console.ReadLine());
+// //   QUESTAO 012 
+// Console.Write("Size A: "); 
+// double a = Convert.ToDouble(Console.ReadLine()); 
+// Console.Write("Size B: ");
+// double b = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Size C: ");
+// double c = Convert.ToDouble(Console.ReadLine());
 
-if (a == b && a == c && b == c)
+// if (a == b && a == c && b == c)
+//             {
+//                 Console.WriteLine("Equilateral");
+//             }
+//             else if (
+//                 a != b && a != c && b != c
+//             )
+//             {
+//                 Console.WriteLine("Scalene");
+//             }
+//             else
+//             {
+//                 Console.WriteLine("Isosceles"); 
+//             }
+
+// //   QUESTAO 013
+// Console.Write("Name: "); 
+// string name = Console.ReadLine();
+// Console.Write("Salary: "); 
+// double salary = Convert.ToDouble(Console.ReadLine());
+
+// double percentual = 0;
+// if (salary <=50000)
+//             {
+//                 percentual = 20;
+//             }
+//             else if (salary <=100000)
+//             {
+//                 percentual = 15;
+//             }
+//             else if (salary <150000)
+//             {
+//                 percentual = 10; 
+//             }
+//             else
+//             {
+//                 percentual = 5;
+//             }
+
+// double newSalary = salary + salary * ( percentual / 100.00);
+
+// Console.WriteLine($"Name: {name}; Salary: {newSalary}; Increase: {percentual}");
+
+// FOR && WHILE - SINTAXES BÁSICAS E INDO AO EXERCICIOS: 
+int number = -1; 
+while (number != 0)
             {
-                Console.WriteLine("Equilateral");
-            }
-            else if (
-                a != b && a != c && b != c
-            )
-            {
-                Console.WriteLine("Scalene");
-            }
-            else
-            {
-                Console.WriteLine("Isosceles"); 
+                Console.Write("Number: "); 
+                number = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Number {number}");
             }
 
-
-
-
-
-
+// (Sintaxes básicas de outros tipos de repetição / dia 22/10)
 
 
 // ARRAYS
