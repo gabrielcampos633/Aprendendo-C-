@@ -415,15 +415,45 @@ namespace MeuProjeto
 // Console.WriteLine($"Name: {name}; Salary: {newSalary}; Increase: {percentual}");
 
 // FOR && WHILE - SINTAXES BÁSICAS E INDO AO EXERCICIOS: 
-int number = -1; 
-while (number != 0)
+// int number = -1; 
+// while (number != 0)
+//             {
+//                 Console.Write("Number: "); 
+//                 number = Convert.ToInt32(Console.ReadLine());
+//                 Console.WriteLine($"Number {number}");
+//             }
+
+// // Break and continue 
+
+//     for (int v = 0; v <= 9; v++)
+//     {
+//         if (v == 5)
+//         {
+//             break;
+//         } Console.Write($"{v}, ");
+//     }
+
+// QUESTAO 001 - LOOPS DE REPETIÇÃO // Contando os números de 1 a 1000 (Podendo fazer outras modificações nesse mesmo código.)
+
+const int MIN = 1; // Aqui define o inicio de toda a repetição, começando em 1; 
+const int MAX = 1000; // Aqui define uma quantidade certa de numeros que serão mostrados nos dois exemplos de for e while
+
+for (int i = MIN; i <=MAX; i++)
             {
-                Console.Write("Number: "); 
-                number = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Number {number}");
+                Console.Write($"{i}, ");
             }
 
-// (Sintaxes básicas de outros tipos de repetição / dia 22/10)
+int v = MIN; 
+while (v <=MAX)
+            {
+                Console.Write($"{v}, ");
+                v++;
+            }
+
+// OBSERVAÇÃO: Constantes são variáveis que não mudam, mas podem ser alteradas, alterando todo o codigo, ela vem antes da predefinição (Int, double, string)
+
+
+
 
 
 // ARRAYS
