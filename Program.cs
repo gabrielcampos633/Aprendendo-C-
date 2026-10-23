@@ -435,23 +435,55 @@ namespace MeuProjeto
 
 // QUESTAO 001 - LOOPS DE REPETIÇÃO // Contando os números de 1 a 1000 (Podendo fazer outras modificações nesse mesmo código.)
 
-const int MIN = 1; // Aqui define o inicio de toda a repetição, começando em 1; 
-const int MAX = 1000; // Aqui define uma quantidade certa de numeros que serão mostrados nos dois exemplos de for e while
+// const int MIN = 1; // Aqui define o inicio de toda a repetição, começando em 1; 
+// const int MAX = 1000; // Aqui define uma quantidade certa de numeros que serão mostrados nos dois exemplos de for e while
 
-for (int i = MIN; i <=MAX; i++)
-            {
-                Console.Write($"{i}, ");
-            }
+// for (int i = MIN; i <=MAX; i++)
+//             {
+//                 Console.Write($"{i}, ");
+//             }
 
-int v = MIN; 
-while (v <=MAX)
-            {
-                Console.Write($"{v}, ");
-                v++;
-            }
+// int v = MIN; 
+// while (v <=MAX)
+//             {
+//                 Console.Write($"{v}, ");
+//                 v++;
+//             }
 
 // OBSERVAÇÃO: Constantes são variáveis que não mudam, mas podem ser alteradas, alterando todo o codigo, ela vem antes da predefinição (Int, double, string)
 
+// // QUESTAO 002 - LOOPS DE REPETIÇÃO 
+// Console.Write("Minimum: "); 
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Maximum: "); 
+// int max = Convert.ToInt32(Console.ReadLine()); 
+
+// if (min > max)
+//             {
+//                 int aux = min;
+//                 min = max; 
+//                 max = aux; 
+//             }
+//             for (int i = min; i <=max; i++)
+//             {
+//                 Console.WriteLine($"{i}, ");
+//             }
+
+// Como sempre tive dificuldades em exercicios de loops, por isso tenho que estudar mais sem parar sobre esse assunto.
+
+// QUESTAO 003 - LOOPS DE REPETIÇÃO 
+Console.Write("Minimum: "); 
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Maximum: "); 
+int max = Convert.ToInt32(Console.ReadLine()); 
+
+for (int i = min; i <= max; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.Write($"{i}, ");
+                }
+            }
 
 
 
