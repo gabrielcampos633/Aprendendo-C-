@@ -471,19 +471,48 @@ namespace MeuProjeto
 
 // Como sempre tive dificuldades em exercicios de loops, por isso tenho que estudar mais sem parar sobre esse assunto.
 
-// QUESTAO 003 - LOOPS DE REPETIÇÃO 
-Console.Write("Minimum: "); 
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Maximum: "); 
-int max = Convert.ToInt32(Console.ReadLine()); 
+// // QUESTAO 003 - LOOPS DE REPETIÇÃO 
+// Console.Write("Minimum: "); 
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Maximum: "); 
+// int max = Convert.ToInt32(Console.ReadLine()); 
 
-for (int i = min; i <= max; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.Write($"{i}, ");
+// for (int i = min; i <= max; i++)
+//             {
+//                 if (i % 2 == 0)
+//                 {
+//                     Console.Write($"{i}, ");
+//                 }
+//             }
+
+// QUESTAO 004 - LOOPS DE REPETIÇÃO (Novamente tive dificuldade nesse assunto, tanto que nem consegui resolver a questão, preciso praticar mais.)
+
+string numberAsString; 
+int number; 
+int highest = int.MinValue;
+bool numberEntered = false;
+
+do
+            { Console.Write("Number: ");
+                numberAsString = Console.ReadLine(); 
+                if (numberAsString != string.Empty ) // String.Empty = "" ou valor Nulo.
+                { numberEntered = true;
+                    number = Convert.ToInt32(numberAsString);
+                    if (number > highest)
+                    {
+                        highest = number; 
+                    }
                 }
+            } while (numberAsString != string.Empty);
+            if (!numberEntered)
+            {
+                Console.WriteLine("No numbers entered");
             }
+            else
+            {
+                Console.WriteLine($"The highest number is {highest}");
+            }
+
 
 
 
