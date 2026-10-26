@@ -487,34 +487,69 @@ namespace MeuProjeto
 
 // QUESTAO 004 - LOOPS DE REPETIÇÃO (Novamente tive dificuldade nesse assunto, tanto que nem consegui resolver a questão, preciso praticar mais.)
 
-string numberAsString; 
-int number; 
-int highest = int.MinValue;
-bool numberEntered = false;
+// string numberAsString; 
+// int number; 
+// int highest = int.MinValue;
+// bool numberEntered = false;
+
+// do
+//             { Console.Write("Number: ");
+//                 numberAsString = Console.ReadLine(); 
+//                 if (numberAsString != string.Empty ) // String.Empty = "" ou valor Nulo.
+//                 { numberEntered = true;
+//                     number = Convert.ToInt32(numberAsString);
+//                     if (number > highest)
+//                     {
+//                         highest = number; 
+//                     }
+//                 }
+//             } while (numberAsString != string.Empty);
+//             if (!numberEntered)
+//             {
+//                 Console.WriteLine("No numbers entered");
+//             }
+//             else
+//             {
+//                 Console.WriteLine($"The highest number is {highest}");
+//             }
+
+// QUESTAO 005 - LOOPS DE REPETIÇÃO
+string numberString;
+int number = 0;
+int? highest1 = null;
+int? highest2 = null;
 
 do
-            { Console.Write("Number: ");
-                numberAsString = Console.ReadLine(); 
-                if (numberAsString != string.Empty ) // String.Empty = "" ou valor Nulo.
-                { numberEntered = true;
-                    number = Convert.ToInt32(numberAsString);
-                    if (number > highest)
-                    {
-                        highest = number; 
-                    }
+            {
+                Console.Write("Number: ");
+                numberString = Console.ReadLine();
+                if (numberString != string.Empty)
+                {
+                    number = Convert.ToInt32(numberString);
+                } if (highest1.HasValue == false)
+                { highest1 = number;} 
+                else if (number > highest1) 
+                {
+                    highest2 = highest1; 
+                    highest1 = number;
+                } else if ((highest2.HasValue == false) || (number > highest2)) { 
+                    highest2 = number;
                 }
-            } while (numberAsString != string.Empty);
-            if (!numberEntered)
+                {
+                    highest2 = number;
+                }
+                }
+
+            while (numberString !="");
+
+            if (highest1.HasValue)
             {
-                Console.WriteLine("No numbers entered");
+                Console.WriteLine($"The number of highest 1 is {highest1}");
             }
-            else
+                if (highest2.HasValue)
             {
-                Console.WriteLine($"The highest number is {highest}");
+                Console.WriteLine($"The number of highest 2 is {highest2}");
             }
-
-
-
 
 
 // ARRAYS
