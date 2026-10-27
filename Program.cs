@@ -514,42 +514,77 @@ namespace MeuProjeto
 //             }
 
 // QUESTAO 005 - LOOPS DE REPETIÇÃO
-string numberString;
-int number = 0;
-int? highest1 = null;
-int? highest2 = null;
+// string numberString;
+// int number = 0;
+// int? highest1 = null;
+// int? highest2 = null;
 
-do
-            {
-                Console.Write("Number: ");
-                numberString = Console.ReadLine();
-                if (numberString != string.Empty)
-                {
-                    number = Convert.ToInt32(numberString);
-                } if (highest1.HasValue == false)
-                { highest1 = number;} 
-                else if (number > highest1) 
-                {
-                    highest2 = highest1; 
-                    highest1 = number;
-                } else if ((highest2.HasValue == false) || (number > highest2)) { 
-                    highest2 = number;
-                }
-                {
-                    highest2 = number;
-                }
-                }
+// do
+//             {
+//                 Console.Write("Number: ");
+//                 numberString = Console.ReadLine();
+//                 if (numberString != string.Empty)
+//                 {
+//                     number = Convert.ToInt32(numberString);
+//                 } if (highest1.HasValue == false)
+//                 { highest1 = number;} 
+//                 else if (number > highest1) 
+//                 {
+//                     highest2 = highest1; 
+//                     highest1 = number;
+//                 } else if ((highest2.HasValue == false) || (number > highest2)) { 
+//                     highest2 = number;
+//                 }
+//                 {
+//                     highest2 = number;
+//                 }
+//                 }
 
-            while (numberString !="");
+//             while (numberString !="");
 
-            if (highest1.HasValue)
-            {
-                Console.WriteLine($"The number of highest 1 is {highest1}");
-            }
-                if (highest2.HasValue)
-            {
-                Console.WriteLine($"The number of highest 2 is {highest2}");
-            }
+//             if (highest1.HasValue)
+//             {
+//                 Console.WriteLine($"The number of highest 1 is {highest1}");
+//             }
+//                 if (highest2.HasValue)
+//             {
+//                 Console.WriteLine($"The number of highest 2 is {highest2}");
+//             }
+
+// QUESTAO 006
+
+// string numberString;
+// int number;
+// int? lowest = null;
+// int lowestFrequency = 0;
+
+// do
+//             { 
+//                 Console.Write("Number: ");
+//                 numberString = Console.ReadLine();
+//                 if (numberString != string.Empty) 
+//                 number = Convert.ToInt32(numberString);
+//                 if (!lowest.HasValue || number < lowest)
+//                 {
+//                     lowest = number;
+//                     lowestFrequency = 1;
+                    
+//                 } else if (number == lowest)
+//                 {
+//                     lowestFrequency++;
+// //                 }
+// //             } while (
+// //                     numberString != string.Empty
+// //             );
+// // if (lowest.HasValue) {
+//  Console.WriteLine($"Lowest: {lowest}, Lowest Frequency: {lowestFrequency}");}
+
+// QUESTAO 007
+
+
+
+
+
 
 
 // ARRAYS
