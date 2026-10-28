@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using System.Globalization;
 using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
@@ -579,10 +580,29 @@ namespace MeuProjeto
 // // if (lowest.HasValue) {
 //  Console.WriteLine($"Lowest: {lowest}, Lowest Frequency: {lowestFrequency}");}
 
-// QUESTAO 007
+// // // QUESTAO 007
 
+// // int term1 = 0; 
+// // int term2 = 1; 
+// // Console.Write($"{term1}");
 
+// // int newTerm = term1 + term2; 
+// // while (newTerm <5000)
+// //             {
+// //                 Console.Write($"{newTerm}, ");
+// //                 newTerm = term1 + term2;
+// //                 term1 = term2; 
+// //                 term2 = newTerm;
+//             }
 
+// QUESTAO 008 
+
+for (int i = 0; i <9; i++)
+            {
+                for (int j = 0; j <9; j++) {
+                Console.WriteLine($"{i} x {j} = {i * j}");
+                }
+                }
 
 
 
