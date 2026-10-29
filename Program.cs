@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel;
 using System.Globalization;
+using System.Linq.Expressions;
 using System.Reflection.PortableExecutable;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
@@ -597,12 +598,79 @@ namespace MeuProjeto
 
 // QUESTAO 008 
 
-for (int i = 0; i <9; i++)
+// for (int i = 0; i <9; i++)
+//             {
+//                 for (int j = 0; j <9; j++) {
+//                 Console.WriteLine($"{i} x {j} = {i * j}");
+//                 }
+//                 }
+
+// QUESTAO 009 - LOOPS DE REPETIÇÃO E NUMEROS RANDOMICOS: 
+
+Random rnd = new Random();
+int number1 = 0; 
+int number2 = 0; 
+int corrects = 0; 
+int incorrects = 0;
+int result = 0; 
+string guessString; 
+int guess = 0;
+
+while (true)
             {
-                for (int j = 0; j <9; j++) {
-                Console.WriteLine($"{i} x {j} = {i * j}");
+                number1 = rnd.Next(10); 
+                number2 = rnd.Next(10); 
+                result = number1 * number2; 
+
+                Console.WriteLine($"{number1} x {number2} = ");
+                guessString = Console.ReadLine();
+                if (guessString == string.Empty)
+                {
+                    break;
                 }
+                guess = Convert.ToInt32(guessString);
+                if (guess == result)
+                {
+                    corrects++;
+                } else
+                {
+                    incorrects++;
                 }
+                if (incorrects == 5)
+                {
+                    break;
+                }
+                Console.WriteLine($"Corrects answers: {corrects} ");
+                Console.WriteLine($"Incorrect answers: {incorrects} ");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -621,49 +689,6 @@ for (int i = 0; i <9; i++)
     // Array.Sort(numbers);
 
     // Console.WriteLine($"{numbers[0]}, {numbers[1]}, {numbers[2]}");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         }
