@@ -607,45 +607,84 @@ namespace MeuProjeto
 
 // QUESTAO 009 - LOOPS DE REPETIÇÃO E NUMEROS RANDOMICOS: 
 
+// Random rnd = new Random();
+// int number1 = 0; 
+// int number2 = 0; 
+// int corrects = 0; 
+// int incorrects = 0;
+// int result = 0; 
+// string guessString; 
+// int guess = 0;
+
+// while (true)
+//             {
+//                 number1 = rnd.Next(10); 
+//                 number2 = rnd.Next(10); 
+//                 result = number1 * number2; 
+
+//                 Console.WriteLine($"{number1} x {number2} = ");
+//                 guessString = Console.ReadLine();
+//                 if (guessString == string.Empty)
+//                 {
+//                     break;
+//                 }
+//                 guess = Convert.ToInt32(guessString);
+//                 if (guess == result)
+//                 {
+//                     corrects++;
+//                 } else
+//                 {
+//                     incorrects++;
+//                 }
+//                 if (incorrects == 5)
+//                 {
+//                     break;
+//                 }
+//                 Console.WriteLine($"Corrects answers: {corrects} ");
+//                 Console.WriteLine($"Incorrect answers: {incorrects} ");
+            // }
+
+// QUESTAO 010
+
+// Console.Write("Number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int fatorial = 1; 
+
+// for (int i = number; i >=1; i--)
+//             {
+//                 fatorial *= i;
+//             } Console.WriteLine($"The number is {number} and fatorial is {fatorial}");
+
+// QUESTAO 011
+
 Random rnd = new Random();
-int number1 = 0; 
-int number2 = 0; 
-int corrects = 0; 
-int incorrects = 0;
-int result = 0; 
-string guessString; 
+int left = 1; 
+int right = 100; 
+int number = rnd.Next(1, right +1);
+int attempts = 0;
 int guess = 0;
 
 while (true)
             {
-                number1 = rnd.Next(10); 
-                number2 = rnd.Next(10); 
-                result = number1 * number2; 
-
-                Console.WriteLine($"{number1} x {number2} = ");
-                guessString = Console.ReadLine();
-                if (guessString == string.Empty)
+                Console.Write($"{left} to {right} => " );
+                guess = Convert.ToInt32(Console.ReadLine());
+                attempts++;
+                if (guess == number)
                 {
-                    break;
-                }
-                guess = Convert.ToInt32(guessString);
-                if (guess == result)
-                {
-                    corrects++;
+                    Console.WriteLine($"Congratulations you gessed the right number with {attempts} attempts");
+                    break; 
+                } else if (guess < number)
+                { 
+                    left = guess +1;
                 } else
                 {
-                    incorrects++;
-                }
-                if (incorrects == 5)
+                    right = guess -1; 
+                } if (left == right)
                 {
+                    Console.WriteLine($"You lost!!! With {attempts} attempts");
                     break;
                 }
-                Console.WriteLine($"Corrects answers: {corrects} ");
-                Console.WriteLine($"Incorrect answers: {incorrects} ");
             }
-
-
-
 
 
 
