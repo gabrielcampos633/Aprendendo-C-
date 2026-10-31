@@ -657,38 +657,50 @@ namespace MeuProjeto
 
 // QUESTAO 011
 
-Random rnd = new Random();
-int left = 1; 
-int right = 100; 
-int number = rnd.Next(1, right +1);
-int attempts = 0;
-int guess = 0;
+// Random rnd = new Random();
+// int left = 1; 
+// int right = 100; 
+// int number = rnd.Next(1, right +1);
+// int attempts = 0;
+// int guess = 0;
 
-while (true)
-            {
-                Console.Write($"{left} to {right} => " );
-                guess = Convert.ToInt32(Console.ReadLine());
-                attempts++;
-                if (guess == number)
-                {
-                    Console.WriteLine($"Congratulations you gessed the right number with {attempts} attempts");
-                    break; 
-                } else if (guess < number)
-                { 
-                    left = guess +1;
-                } else
-                {
-                    right = guess -1; 
-                } if (left == right)
-                {
-                    Console.WriteLine($"You lost!!! With {attempts} attempts");
-                    break;
-                }
-            }
-
-
+// while (true)
+//             {
+//                 Console.Write($"{left} to {right} => " );
+//                 guess = Convert.ToInt32(Console.ReadLine());
+//                 attempts++;
+//                 if (guess == number)
+//                 {
+//                     Console.WriteLine($"Congratulations you gessed the right number with {attempts} attempts");
+//                     break; 
+//                 } else if (guess < number)
+//                 { 
+//                     left = guess +1;
+//                 } else
+//                 {
+//                     right = guess -1; 
+//                 } if (left == right)
+//                 {
+//                     Console.WriteLine($"You lost!!! With {attempts} attempts");
+//                     break;
+//                 }
+//             }
 
 
+// QUESTAO 012
+
+// Console.Write("Number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int numberAuxiliador = number; 
+// int numberInverted = 0;
+
+// while (numberAuxiliador != 0)
+//             {
+//                 int lastDigit = numberAuxiliador % 10; // Aqui ele pega os numeros no resto da divisão 
+//                 numberInverted = numberInverted * 10 + lastDigit; // Aqui ele multiplica / ex: 5 - 50 e o numero auxiliador divide por 10
+//                 numberAuxiliador /= 10; // Aqui ele divide por 10
+//             } 
+//             Console.WriteLine($"The number is {number} and the inverted is {numberInverted}");
 
 
 
