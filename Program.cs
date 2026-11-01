@@ -702,23 +702,27 @@ namespace MeuProjeto
 //             } 
 //             Console.WriteLine($"The number is {number} and the inverted is {numberInverted}");
 
+// QUESTAO 013
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    Console.Write("Number: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    
+    bool isPrime = true; 
+    for (int i = 2; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+        if (isPrime && number != 1)
+            {
+                Console.WriteLine($"The number: {number} is prime");
+            } else
+            {
+                Console.WriteLine($"The number: {number} is not prime");
+            }
 
 
 
