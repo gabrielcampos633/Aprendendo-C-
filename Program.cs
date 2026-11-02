@@ -704,26 +704,36 @@ namespace MeuProjeto
 
 // QUESTAO 013
 
-    Console.Write("Number: ");
-    int number = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Number: ");
+    // int number = Convert.ToInt32(Console.ReadLine());
     
-    bool isPrime = true; 
-    for (int i = 2; i < number; i++)
-            {
-                if (number % i == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
-        if (isPrime && number != 1)
-            {
-                Console.WriteLine($"The number: {number} is prime");
-            } else
-            {
-                Console.WriteLine($"The number: {number} is not prime");
-            }
+    // bool isPrime = true; 
+    // for (int i = 2; i < number; i++)
+    //         {
+    //             if (number % i == 0)
+    //             {
+    //                 isPrime = false;
+    //                 break;
+    //             }
+    //         }
+    //     if (isPrime && number != 1)
+    //         {
+    //             Console.WriteLine($"The number: {number} is prime");
+    //         } else
+    //         {
+    //             Console.WriteLine($"The number: {number} is not prime");
+    //         }
 
+// QUESTAO 014 
+    Console.Write("Height: ");
+    int height = Convert.ToInt32(Console.ReadLine());
+
+    for (int row = 1; row < height; row++)
+            {
+                for (int i = 1; i <= row; i++) 
+                {Console.Write("*");}
+                Console.WriteLine();
+            } 
 
 
 
