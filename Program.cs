@@ -737,25 +737,33 @@ namespace MeuProjeto
 
 // QUESTAO 015
 
-    Console.Write("Height: ");
-    int height = Convert.ToInt32(Console.ReadLine());
+    // Console.Write("Height: ");
+    // int height = Convert.ToInt32(Console.ReadLine());
 
-    int spaces = height -1; 
-    int stars = 1; 
-    for (int row =1; row <= height; row++)
-            {
-                for (int i = 1; i <= spaces; i++)
-                {
-                    Console.Write(" ");
-                }
-                for (int i = 1; i <= stars; i++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-                spaces--; 
-                stars++;
-            }
+    // int spaces = height -1; 
+    // int stars = 1; 
+    // for (int row =1; row <= height; row++)
+    //         {
+    //             for (int i = 1; i <= spaces; i++)
+    //             {
+    //                 Console.Write(" ");
+    //             }
+    //             for (int i = 1; i <= stars; i++)
+    //             {
+    //                 Console.Write("*");
+    //             }
+    //             Console.WriteLine();
+    //             spaces--; 
+    //             stars++;
+    //         }
+
+
+// QUESTAO 016
+
+
+
+
+
 
 
 // ARRAYS
@@ -776,6 +784,7 @@ namespace MeuProjeto
 
         }
              }
-    }
+    } 
+
 
  
