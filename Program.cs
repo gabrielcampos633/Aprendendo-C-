@@ -776,7 +776,7 @@ for (int i =1; i <=100; i++)
                 }
             }
 
-
+// Aqui encerramos os códigos de loops, e agora vamos aos codigos de modularização e sub programas.
 
 
 
